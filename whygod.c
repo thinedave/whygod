@@ -5,7 +5,6 @@
 int main() {
     int ram = 0;
     char buffer[200000];
-    char closer[] = "thineprogrammehathconcluded";
 
     FILE* code = fopen("main.whygod", "r");
 

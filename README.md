@@ -26,10 +26,15 @@ print "HELLO WORLD"
 ## Compiling
 you may compile the supplied C file using gcc, but if you want the smallest possible interpreter, feel free to use this code
 ```c
-int ram = 0;
-char buffer[] = "[INSERT WHYGOD CODE]";
 
-for(int i = 1; i < (sizeof buffer); i++) {
+#include <stdio.h>
+
+
+int main() {
+    int ram = 0;
+    char buffer[] = "[INSERT WHYGOD CODE]";
+
+    for(int i = 1; i < (sizeof buffer); i++) {
         switch(buffer[i]) {
             case '0':
                 ram = -1;
@@ -50,4 +55,5 @@ for(int i = 1; i < (sizeof buffer); i++) {
 
     }
     
+}
 ```
